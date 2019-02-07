@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="./style/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Quicksand|Merienda"
+      rel="stylesheet"
+    />
+    <script src="./script/home.js"></script>
+    <title>note-zilla/dashboard</title>
+  </head>
+  <body class="homeContainer">
+    <nav class="navigation">
+      <header class="notesHeading">Note-Zilla</header>
+      <span id="name" class="user">##namehere##</span>
+      <form method="POST" action="/">
+        <button class="logout">Logout</button>
+      </form>
+      <button class="help">Help</button>
+    </nav>
+    <section class="addList">
+      <input
+        type="text"
+        placeHolder="new todo"
+        class="insertTitle"
+        id="title"
+      />
+      <textarea
+        type="text"
+        placeholder="enter description"
+        class="insertTitle"
+        id="description"
+        maxlength="100"
+      ></textarea>
+      <button class="addToDoSymbol" id="addTitle">
+        <i class="fas fa-plus"></i>
+      </button>
+    </section>
+    <section id="TODOs" class="TODOs"></section>
+  </body>
+</html>

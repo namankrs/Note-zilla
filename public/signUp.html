@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>note-zilla/signUp</title>
+    <link rel="stylesheet" href="./style/main.css" />
+  </head>
+  <body class="container">
+    <div class="toDoImg"></div>
+    <form action="/submit" method="POST">
+      <table class="credentials">
+      <tbody>
+          <tr>
+              <td><label>Username</label></td>
+              <td>
+                <input type="text" name="userName" class="userName" required />
+              </td>
+            </tr>
+            <td><label>Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="password"
+                class="password"
+                required
+              />
+            </td>
+          </tr>
+          <td><label>Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                name="confirmPassword"
+                class="password"
+                required
+              />
+            </td>
+          </tr>
+          <tr><td>##errorMessage##</td></tr>
+        </tbody>
+      </table>  
+    <button class="signUpButton" type="submit">Sign Up</button>
+    <label class = 'existingUser'>Already a user?</label>
+      <a href="/" class="backToLogin">&#10094 LOGIN</a>
+    </form>
+  </body>
+</html>
